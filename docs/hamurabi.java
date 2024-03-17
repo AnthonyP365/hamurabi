@@ -1,4 +1,4 @@
-import java.io.IOException;
+/*import java.io.IOException;
 import java.util.Scanner;
 
 // this seems to be an example of a solution that mimics the original BASIC code the author was writing from.
@@ -153,4 +153,4 @@ public class HAMURABI {
 			a.newYear();
 		a.finished();
 	}
-}
+}*/
