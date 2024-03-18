@@ -1,7 +1,6 @@
 package hammurabi;
 import org.junit.Test;
-
-import static org.junit.Assert.assertTrue;
+import static org.junit.Assert.*;
 
 public class HammurabiTest {
 
@@ -31,4 +30,13 @@ public class HammurabiTest {
         }
     }
 
+    @Test
+    public final void testStarvationDeaths() {
+        int deaths = Hammurabi.starvationDeaths(100, 1639);
+        assertEquals("Wrong number of starvation deaths.", 19, deaths);
+        deaths = Hammurabi.starvationDeaths(100, 2500);
+        if (deaths < 0) {
+            fail("You starved a negative number of people!");
+        }
+    }
 }
