@@ -57,7 +57,6 @@ public class HammurabiV2 {
             askHowMuchGrainToFeedPeople();
 
             newHarvest(askHowManyAcresToPlant());
-            System.out.println("Current storage: " + storage);
 
         }
     }
@@ -66,7 +65,7 @@ public class HammurabiV2 {
         year += 1;
         for (int i = year; i >= 2; i++) {
             newYield();
-            newLandPrice();
+            newCostOfLand();
         }
     }
 
@@ -191,10 +190,9 @@ public class HammurabiV2 {
         return harvest;
     }
 
-    public int newLandPrice() {
+    public int newCostOfLand() {
         return landPrice = random.nextInt(23-1 + 1) +1;
     }
-
 
 
 
